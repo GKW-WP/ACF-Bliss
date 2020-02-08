@@ -1,0 +1,4 @@
+require:
+  - wp-cli/browse-command.php
+@acf.bliss:
+  ssh: vagrant:acf.bliss:/var/www/html
