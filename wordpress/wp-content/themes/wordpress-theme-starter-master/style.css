@@ -3,20 +3,136 @@
  * ---
  * Main `sass` file. Import here `sass` files
  */
-@import url("https://fonts.googleapis.com/css?family=Hind:400,700|Roboto+Slab");
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/**
+ * modules/variables
+ * ---
+ */
+/**
+ * Typography
+ */
+/**
+ * Colors
+ */
+/**
+ * Grid
+ */
+/**
+ * modules/mixins
+ * ---
+ */
+/**
+ * modules/fonts
+ * ---
+ * Declare fonts here
+ */
+/*
+@font-face {
+  font-family: "Font-Name";
+  src: url("fonts/font-name.eot");
+  src: url("fonts/font-name.eot?#iefix") format("embedded-opentype"),
+    url("fonts/font-name.woff") format("woff"),
+    url("fonts/font-name.ttf") format("truetype"),
+    url("fonts/font-name.svg#font-name") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+/**
+ * partials/header
+ * ---
+ */
+.logo {
+  width: 35%;
+  max-width: 160px;
+  position: relative;
+  z-index: 1;
+  top: 3%;
+  left: 7%;
+}
+
+/**
+ * partials/footer
+ * ---
+ */
+.hero {
+  height: 100vh;
+}
+.hero .jumbotron {
+  padding: 0;
+  margin-bottom: 0;
+}
+.hero #video-background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+  width: 100%;
+}
+.hero .hero-img {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  object-fit: cover;
+}
+.hero .info-container {
+  width: 100%;
+  position: absolute;
+  bottom: 7vh;
+}
+.hero .info-container .title {
+  font-size: 2.8rem;
+  font-size: 12.5vw;
+  text-align: center;
+  color: #000;
+  margin-bottom: 20px;
+}
+.hero .info-container .sub-container {
+  height: 76px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.hero .info-container a {
+  color: #000;
+}
+.hero .btn-wide {
+  width: 94%;
+  padding: 11px 10px 8px;
+  background-color: #000;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 auto;
+}
+
 h1 {
   color: mediumaquamarine;
 }
-@media only screen and (max-width:768px) {
-	header {
-		display: none;
-	}
-	footer {
-		display: none;
-	}
+
+.container {
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
+.container main {
+  width: 65%;
+  border: 1px solid black;
+}
+.container aside {
+  width: 25%;
+  border: 1px solid black;
+}
+
 /*# sourceMappingURL=style.css.map */
