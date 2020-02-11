@@ -37,3 +37,4 @@ site.yml
 # large/disallowed file types
 .mp4
 .pdf
+provision-post.sh
